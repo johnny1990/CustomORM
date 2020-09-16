@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CustomORM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="495.6" Width="895.065" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="23" Margin="111,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb4" HorizontalAlignment="Left" Height="23" Margin="111,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="23" Margin="111,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="23" Margin="111,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Server" HorizontalAlignment="Left" Margin="25,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Database" HorizontalAlignment="Left" Margin="25,89,0,0" VerticalAlignment="Top"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="25,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="25,196,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSp" HorizontalAlignment="Left" Height="23" Margin="426,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+        <Button x:Name="btn2" Content="Go" HorizontalAlignment="Left" Margin="750,40,0,0" VerticalAlignment="Top" Width="34" Height="23" Click="btn2_Click" />
+        <Label Content="SP name" HorizontalAlignment="Left" Margin="363,39,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="130" Margin="376,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217"/>
+        <TextBox x:Name="txtResult2" HorizontalAlignment="Left" Height="130" Margin="608,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <Button x:Name="btn1" Content="Test" HorizontalAlignment="Left" Margin="79,247,0,0" VerticalAlignment="Top" Width="92" Height="28" Click="btn1_Click"/>
+        <TextBox x:Name="tb5" HorizontalAlignment="Left" Height="143" Margin="181,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254"/>
+        <Button x:Name="btn3" Content="Go" HorizontalAlignment="Left" Margin="79,355,0,0" VerticalAlignment="Top" Width="41" Click="btn3_Click"/>
+        <TextBox x:Name="txtResult3" HorizontalAlignment="Left" Height="130" Margin="608,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+        <TextBox x:Name="txtResInsert" HorizontalAlignment="Left" Height="23" Margin="608,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
+
     </Grid>
 </Window>
