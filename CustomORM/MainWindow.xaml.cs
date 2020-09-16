@@ -61,6 +61,11 @@ namespace CustomORM
                         type = "DateTime?";
                         conv = ".ToDate();";
                     }
+                    else if (field.Contains("Decimal"))
+                    {
+                        type = "Decimal?";
+                        conv = ".ToDecimal();";
+                    }
                     txtResult.Text += "public " + type + " " + field + " {get;set;}\r\n";
 
                     txtResult2.Text += "record." + field + "=reader[\"" + field + "\"]" + conv + Environment.NewLine;
@@ -71,7 +76,7 @@ namespace CustomORM
                 txtResult3.Text += "SqlParameter par = new SqlParameter(\"@ID\", SqlDbType.BigInt, sizeof(long));" + Environment.NewLine;
                 txtResult3.Text += "par.Direction = System.Data.ParameterDirection.Output; " + Environment.NewLine;
                 txtResult3.Text += "collection.Add(par);" + Environment.NewLine;
-                txtResult3.Text += "obj.ID = SQLDB.ExecuteInsert(collection, " + txtSp.Text + ").ToLong().Value;" + Environment.NewLine;
+                txtResult3.Text += "obj.ID = SQLDB.Insert(collection, " + txtSp.Text + ").ToLong().Value;" + Environment.NewLine;
                 txtResult3.Text += "return obj; ";
             }
             catch (Exception ex) 
